@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+
+.header {
+  background-color: #ffffff;
+  padding: 0rem;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  
+}
+
+/* Logo styling */
+.nav-logo {
+  flex: 0 0 auto;
+}
+
+.logo-moya {
+  height: 50px;
+  max-height: 80%;
+  max-width: 80%;
+  padding-left: 1rem;
+  object-fit: contain;
+}
+
+/* Sidebar styling for smaller screens */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Initially hidden off the screen */
+  width: 250px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  right: 0; /* Slides in when active */
+}
+
+/* Navigation list styling */
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-item {
+  margin: 1.5rem 0; /* Spacing between items */
+}
+
+.nav-item a {
+  font-family: 'SUSE', sans-serif;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 14px;
+  font-size: 1.3rem;
+  font-weight: 300; /* Thin weight */
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item a:hover {
+  background-color: #aeaeae;
+  color: #000000;
+  font-weight: bold;
+  padding: 0.9rem;
+}
+
+/* Social icons styling */
+.nav-icon {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width:12vw;
+}
+
+.icon-item {
+  color: #000000;
+  padding: 0rem;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.icon-item:hover {
+  color: #aeaeae;
+}
+
+/* Hamburger menu icon styling */
+.nav-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 1rem;
+}
+
+/* Responsive behavior for larger screens */
+@media (min-width: 768px) {
+  .sidebar {
+    display: none; /* Hide sidebar on larger screens */
+  }
+
+  .nav-list {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  .nav-icon {
+    display: flex;
+    align-items: center;
+    flex-direction: row; /* Icons inline on larger screens */
+    margin: 0;
+  }
+
+  .nav-toggle {
+    display: none; /* Hide the hamburger menu icon on larger screens */
+  }
+}

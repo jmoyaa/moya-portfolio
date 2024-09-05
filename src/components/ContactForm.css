@@ -1,0 +1,114 @@
+body {
+  background-color: white; /* Set the body background to white */
+  color: #333; /* Default text color to ensure readability on white background */
+  font-family: Arial, sans-serif; /* Optional: Set a default font for the body */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-form {
+  padding: 60px 20px; /* Reduced padding for better spacing */
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff; /* Light background color for contrast */
+  border: 2px solid black; /* Solid black border */
+  border-radius: 20px; /* Rounded corners with 20px radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-sizing: border-box;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 30px; /* Increased bottom margin for better spacing */
+  font-size: 28px; /* Slightly larger font size */
+  color: #333; /* Darker text color */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Increased bottom margin */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px; /* Increased space between label and input */
+  font-weight: bold;
+  color: #555; /* Subtle text color */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px; /* Increased padding for better touch targets */
+  font-size: 16px;
+  border: 2px solid black; /* Solid black border */
+  border-radius: 5px; /* Rounded corners with 5px radius */
+  box-sizing: border-box;
+  transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+}
+
+textarea {
+  height: 150px; /* Slightly taller textarea */
+  resize: vertical;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 15px; /* Increased padding for a more prominent button */
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition for hover effect */
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+button:active {
+  background-color: #004085;
+  transform: translateY(0); /* Reset on click */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 30px 15px; /* Adjusted padding for smaller screens */
+  }
+
+  .contact-form h2 {
+    font-size: 24px; /* Adjusted heading size */
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 20px 10px; /* Further adjusted padding for mobile screens */
+  }
+
+  .contact-form h2 {
+    font-size: 22px; /* Adjusted heading size */
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
