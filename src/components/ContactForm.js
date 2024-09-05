@@ -23,7 +23,7 @@ function ContactForm() {
       <h2>SEND ME A MESSAGE</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name"> Your Namee</label>
+          <label htmlFor="name"> Your Name</label>
           <input
             type="text"
             id="name"
