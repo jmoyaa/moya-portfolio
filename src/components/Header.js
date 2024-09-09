@@ -4,6 +4,7 @@ import { faLinkedin, faFacebook, faInstagram } from '@fortawesome/free-brands-sv
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -17,7 +18,7 @@ const Header = () => {
       setIsMobile(true);
     } else {
       setIsMobile(false);
-      setIsMenuOpen(false); // Close the menu if switching to desktop view
+      setIsMenuOpen(false); 
     }
   };
 

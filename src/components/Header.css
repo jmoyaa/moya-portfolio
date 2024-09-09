@@ -6,7 +6,7 @@
   padding: 0rem;
 }
 
-/* Navbar styling */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@
   
 }
 
-/* Logo styling */
+
 .nav-logo {
   flex: 0 0 auto;
 }
@@ -28,11 +28,11 @@
   object-fit: contain;
 }
 
-/* Sidebar styling for smaller screens */
+/* this is for sidear style during mobile screen */
 .sidebar {
   position: fixed;
   top: 0;
-  right: -250px; /* Initially hidden off the screen */
+  right: -250px; 
   width: 250px;
   height: 100%;
   background-color: #ffffff;
@@ -46,10 +46,10 @@
 }
 
 .sidebar.active {
-  right: 0; /* Slides in when active */
+  right: 0; 
 }
 
-/* Navigation list styling */
+
 .nav-list {
   list-style: none;
   padding: 0;
@@ -59,7 +59,7 @@
 }
 
 .nav-item {
-  margin: 1.5rem 0; /* Spacing between items */
+  margin: 1.5rem 0;
 }
 
 .nav-item a {
@@ -68,7 +68,7 @@
   text-decoration: none;
   border-radius: 14px;
   font-size: 1.3rem;
-  font-weight: 300; /* Thin weight */
+  font-weight: 300; 
   padding: 0.5rem 1rem;
   transition: background-color 0.3s ease;
 }
@@ -80,7 +80,7 @@
   padding: 0.9rem;
 }
 
-/* Social icons styling */
+
 .nav-icon {
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@
 
 .icon-item {
   color: #000000;
-  padding: 0rem;
+  padding: 0.3rem;
   font-size: 24px;
   transition: color 0.3s ease;
 }
@@ -99,7 +99,7 @@
   color: #aeaeae;
 }
 
-/* Hamburger menu icon styling */
+
 .nav-toggle {
   display: flex;
   align-items: center;
@@ -107,10 +107,10 @@
   padding-right: 1rem;
 }
 
-/* Responsive behavior for larger screens */
+
 @media (min-width: 768px) {
   .sidebar {
-    display: none; /* Hide sidebar on larger screens */
+    display: none; 
   }
 
   .nav-list {
@@ -122,11 +122,11 @@
   .nav-icon {
     display: flex;
     align-items: center;
-    flex-direction: row; /* Icons inline on larger screens */
+    flex-direction: row;
     margin: 0;
   }
 
   .nav-toggle {
-    display: none; /* Hide the hamburger menu icon on larger screens */
+    display: none; 
   }
 }

@@ -19,10 +19,10 @@ const About = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(handleNext, 4000); // Change slide every 4 sec
+    const interval = setInterval(handleNext, 4000); 
 
-    return () => clearInterval(interval); // Clear interval on component unmount or when currentSlide changes
-  }, [currentSlide]); // Dependency array includes currentSlide
+    return () => clearInterval(interval);
+  }, [currentSlide]); 
 
   return (
     <section id="about" className="about">

@@ -18,8 +18,8 @@ const projectData = [
   },
   {
     id: 3,
-    title: "K/DA- INSPIRED WEBSITE [FAN-PROJECT]",
-    description: `This is a basic fan project website dedicated to K/DA, a virtual music group from the popular game League of Legends (LoL). K/DA has captured the hearts of many with their catchy songs and vibrant characters. The website serves as a hub for fans to stay updated on K/DA's latest songs and albums, allowing them to easily browse through recent releases. It also features a direct link to the official K/DA product shop, ensuring fans can access exclusive merchandise. Additionally, the website includes a member page where users can get to know the virtual stars of the group. To stay connected, a subscribe button directs fans to K/DA's official social media networks (SNS), keeping them informed of the latest news and updates. This project is a tribute to the creativity and energy of K/DA, offering fans a comprehensive resource to explore and enjoy all things K/DA. Disclaimer: K/DA and League of Legends are trademarks owned by Riot Games, Inc. This is a fan-made concept and is not officially affiliated with Riot Games.`,
+    title: "K/DA- INSPIRED WEBSITE [UI/UX]",
+    description: `This is a basic fan project UI/UX design of K/DA, a virtual music group from the popular game League of Legends (LoL). K/DA has captured the hearts of many with their catchy songs and vibrant characters. The website serves as a hub for fans to stay updated on K/DA's latest songs and albums, allowing them to easily browse through recent releases. It also features a direct link to the official K/DA product shop, ensuring fans can access exclusive merchandise. Additionally, the website includes a member page where users can get to know the virtual stars of the group. To stay connected, a subscribe button directs fans to K/DA's official social media networks (SNS), keeping them informed of the latest news and updates. This project is a tribute to the creativity and energy of K/DA, offering fans a comprehensive resource to explore and enjoy all things K/DA. Disclaimer: K/DA and League of Legends are trademarks owned by Riot Games, Inc. This is a fan-made concept and is not officially affiliated with Riot Games.`,
     images: ['/kda-1.png', '/kda-2.png', '/kda-3.png', '/kda-4.png'],
     thumbnail: '/slide-7.svg'
   },
@@ -40,7 +40,7 @@ const Projects = () => {
   const openPopup = (project) => {
     setActiveProject(project);
     setIsPopupOpen(true);
-    setEnlargedImage(null); // Reset enlarged image when opening a new popup
+    setEnlargedImage(null); 
   };
 
   const closePopup = () => {
