@@ -8,6 +8,7 @@
   background-color: #fff;
 }
 
+
 .contact h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -15,12 +16,12 @@
 
 .nav-icon {
   display: flex;
-  flex-direction: row; 
-  justify-content: center;
-  align-items: center;
+  justify-content: center; 
+  align-items: center; 
   gap: 1rem; 
-  padding: 0rem 0;
+  padding: 1rem 0rem;
 }
+
 
 .icon-item {
   color: #333;
@@ -28,19 +29,5 @@
 }
 
 .icon-item:hover {
-  color: #0073e6; 
-}
-
-
-@media (max-width: 768px) {
-  .nav-icon {
-    flex-direction: row; 
-  }
-}
-
-
-@media (min-width: 769px) {
-  .nav-icon {
-    flex-direction: row; 
-  }
+  color: #0073e6;
 }
