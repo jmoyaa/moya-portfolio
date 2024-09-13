@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
-body {
-  background-color: white; 
-  color: black; 
-}
 
 .loading-container {
   position: fixed; 
@@ -14,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white; 
+  background-color: transparent; 
   z-index: 9999; 
 }
 
@@ -43,15 +39,5 @@ body {
 @keyframes spin {
   to {
     transform: rotate(360deg);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212; 
-    color: white; 
-  }
-  .loading-container {
-    background-color: #121212;
   }
 }
