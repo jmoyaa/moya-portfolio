@@ -16,6 +16,7 @@
 
 .nav-icon {
   display: flex;
+  flex-direction: row;
   justify-content: center; 
   align-items: center; 
   gap: 1rem; 
@@ -30,4 +31,18 @@
 
 .icon-item:hover {
   color: #0073e6;
+}
+
+
+@media (max-width: 768px) {
+  .nav-icon {
+    flex-direction: row; 
+  }
+}
+
+
+@media (min-width: 769px) {
+  .nav-icon {
+    flex-direction: row; 
+  }
 }
