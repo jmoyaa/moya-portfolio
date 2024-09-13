@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    handleResize(); // Set the initial state
+    handleResize(); 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -43,7 +43,7 @@ const Header = () => {
               <ul className="nav-list">
                 <li className="nav-item"><a href="#about" onClick={toggleMenu}>ABOUT</a></li>
                 <li className="nav-item"><a href="#projects" onClick={toggleMenu}>PROJECTS</a></li>
-                <li className="nav-item"><a href="#awards" onClick={toggleMenu}>AWARDS</a></li>
+                <li className="nav-item"><a href="#awards" onClick={toggleMenu}>ACHIEVEMENTS</a></li>
                 <li className="nav-item"><a href="#contact" onClick={toggleMenu}>CONTACT</a></li>
                
               </ul>
@@ -65,7 +65,7 @@ const Header = () => {
             <ul className="nav-list">
               <li className="nav-item"><a href="#about">ABOUT</a></li>
               <li className="nav-item"><a href="#projects">PROJECTS</a></li>
-              <li className="nav-item"><a href="#awards">AWARDS</a></li>
+              <li className="nav-item"><a href="#awards">ACHIEVEMENTS</a></li>
               <li className="nav-item"><a href="#contact">CONTACT</a></li>
              
             </ul>

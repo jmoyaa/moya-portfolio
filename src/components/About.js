@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './About.css'; // Import the corresponding CSS
+import './About.css'; 
 
 const slides = [
   '/slide-1.svg',
