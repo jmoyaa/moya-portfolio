@@ -139,9 +139,17 @@ body {
 
 
 @media (prefers-color-scheme: dark) {
+ 
   body {
-    background-color: #121212; 
-    color: white; 
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
   }
+
+  .sidebar {
+    display: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+
   
 }
