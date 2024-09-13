@@ -93,6 +93,9 @@ const Projects = () => {
       {isPopupOpen && activeProject && (
         <div className="popup open" onClick={closePopup}>
           <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+            {/* Close button for the popup */}
+            <div className="close-popup-button" onClick={closePopup}>&#10005;</div>
+            
             <h3>{activeProject.title}</h3>
             <p>{activeProject.description}</p>
             <div className="popup-images">
@@ -105,6 +108,7 @@ const Projects = () => {
                 />
               ))}
             </div>
+
             {enlargedImage && (
               <div className="enlarged-image-view" onClick={closeEnlargedImage}>
                 <img src={enlargedImage} alt="Enlarged view" />
