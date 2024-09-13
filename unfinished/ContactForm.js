@@ -8,11 +8,11 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
+
     console.log('Name:', name);
     console.log('Email:', email);
     console.log('Message:', message);
-    // Clear the form fields after submission
+   
     setName('');
     setEmail('');
     setMessage('');

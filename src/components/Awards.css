@@ -50,10 +50,10 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
-  /* Media query for smaller screens */
+
   @media (max-width: 768px) {
     .project-item {
-      width: 100%; /* Make the project items occupy the full width on mobile */
+      width: 100%; 
       margin-right: 0.5rem;
     }
   
@@ -72,20 +72,20 @@
     }
   }
 
-  /* Media query for smaller screens */
+
 @media (max-width: 768px) {
     .project-title {
-      font-size: 1.2rem; /* Adjust the size of the title for smaller screens */
-      padding-left: 20px; /* Optional: Adjust padding for mobile view */
+      font-size: 1.2rem; 
+      padding-left: 20px; 
     }
   
     .project-title .name {
-      font-size: 2.5rem; /* Adjust the font size of the name */
+      font-size: 2.5rem; 
     }
   }
   
   
-  /* Popup styles */
+
 .popup {
     position: fixed;
     top: 0;

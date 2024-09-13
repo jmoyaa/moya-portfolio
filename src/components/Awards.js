@@ -42,7 +42,7 @@ const Awards = () => {
   const openPopup = (project) => {
     setActiveProject(project);
     setIsPopupOpen(true);
-    setEnlargedImage(null); // Reset enlarged image when opening a new popup
+    setEnlargedImage(null); 
   };
 
   const closePopup = () => {
