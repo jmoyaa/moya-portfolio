@@ -27,7 +27,11 @@ const projectData = [
     id: 4,
     title: "Meta Front End Project (ATLA-inspired website)",
     description: "This project is a fan-inspired website created as part of the requirements to pass the Meta Front End Developer Professional Certificate. The website is themed around the Netflix Live Action adaptation of Avatar: The Last Airbender and offers fans a simple yet informative platform. It features the official characters from the show, the most recent trailer, and some key information about the series. Disclaimer: This is a fan-inspired website and is not officially affiliated with Netflix or the Avatar: The Last Airbender franchise.",
+<<<<<<< HEAD
     images: ['/slide-6.svg', './pulic/ATLA-2.PN'],
+=======
+    images: ['/slide-6.svg', '/ATLA-2.PNG'],
+>>>>>>> 3d6e302b6871bbf23c70100bc7394ad6153ee92c
     thumbnail: '/slide-6.svg'
   },
 ];
