@@ -4,7 +4,6 @@ import { faLinkedin, faFacebook, faInstagram } from '@fortawesome/free-brands-sv
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -23,10 +22,17 @@ const Header = () => {
   };
 
   useEffect(() => {
-    handleResize(); 
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  // Close the sidebar when clicking on the overlay
+  const handleCloseSidebar = () => {
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+  };
 
   return (
     <header className="header">
@@ -39,13 +45,13 @@ const Header = () => {
             <div className="nav-toggle" onClick={toggleMenu}>
               <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} style={{ fontSize: '24px' }} />
             </div>
+            {isMenuOpen && <div className="overlay" onClick={handleCloseSidebar} />} {}
             <div className={`sidebar ${isMenuOpen ? 'active' : ''}`}>
               <ul className="nav-list">
                 <li className="nav-item"><a href="#about" onClick={toggleMenu}>ABOUT</a></li>
                 <li className="nav-item"><a href="#projects" onClick={toggleMenu}>PROJECTS</a></li>
                 <li className="nav-item"><a href="#awards" onClick={toggleMenu}>ACHIEVEMENTS</a></li>
                 <li className="nav-item"><a href="#contact" onClick={toggleMenu}>CONTACT</a></li>
-               
               </ul>
               <div className="nav-icon">
                 <a className="icon-item" href="https://www.linkedin.com/in/jaymoyaaa" target="_blank" rel="noopener noreferrer">
@@ -67,7 +73,6 @@ const Header = () => {
               <li className="nav-item"><a href="#projects">PROJECTS</a></li>
               <li className="nav-item"><a href="#awards">ACHIEVEMENTS</a></li>
               <li className="nav-item"><a href="#contact">CONTACT</a></li>
-             
             </ul>
             <div className="nav-icon">
               <a className="icon-item" href="https://www.linkedin.com/in/jaymoyaaa" target="_blank" rel="noopener noreferrer">
@@ -88,5 +93,3 @@ const Header = () => {
 };
 
 export default Header;
-
-

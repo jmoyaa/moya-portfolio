@@ -6,7 +6,7 @@ const projectData = [
     id: 1,
     title: "Compostif-AI: An Automated Composting System With Random Forest (ML) for Compost Maturity Assessment",
     description: "Conducted a thesis and developed a prototype on compost maturity assessment using artificial intelligence (Random Forest), involving data collection, analysis, and presentation of findings. Developed a user-friendly interface using Electron JS, JavaScript, HTML, CSS, which was designed using Figma, allowing users to easily input data and visualize compost maturity levels through progress bar. The project not just demonstrated strong analytical and problem-solving skills related to composting, but as well as proficiency in both front-end, back-end development, and UI/UX design. The work earned the Best Research Paper award (CpE Batch 2024) and is currently in the process of copyright and patenting applications.",
-    images: ['/compostifai-5.png'],
+    images: ['/compostifai-5.png','/compostifai-6.png' ],
     thumbnail: '/compostifai-6.png'
   },
   {
@@ -23,6 +23,15 @@ const projectData = [
     images: ['/award-2.png'],
     thumbnail: '/award-2.png',
   },
+
+  {
+    id: 4,
+    title: "Cloud Computing",
+    description: "Completed and earned badges and certificates for AWS Cloud Computing 101, AWS Cloud Quest: Cloud Practitioner, and Microsoft AZ-104 Exam Preparation.",
+    images: ['/award-3.png'],
+    thumbnail: '/award-3.png',
+  },
+
 ];
 
 const Awards = () => {
@@ -66,8 +75,8 @@ const Awards = () => {
 
   return (
     <section id="awards" className="projects">
-      <h2 className="project-title">ACHIEVEMENTS BY
-        <span className="name"> JAY MOYA</span>
+      <h2 className="project-title">ACHIEVEMENTS 
+        
       </h2>
       
       <div className="project-grid1">

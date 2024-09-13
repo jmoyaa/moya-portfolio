@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 999; 
+}
 
 
 .header {
@@ -6,15 +15,12 @@
   padding: 0rem;
 }
 
-
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  
 }
-
 
 .nav-logo {
   flex: 0 0 auto;
@@ -28,15 +34,14 @@
   object-fit: contain;
 }
 
-/* this is for sidear style during mobile screen */
 .sidebar {
   position: fixed;
   top: 0;
-  right: -250px; 
+  right: -250px;
   width: 250px;
   height: 100%;
   background-color: #ffffff;
-  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,9 +51,8 @@
 }
 
 .sidebar.active {
-  right: 0; 
+  right: 0;
 }
-
 
 .nav-list {
   list-style: none;
@@ -68,7 +72,7 @@
   text-decoration: none;
   border-radius: 14px;
   font-size: 1.3rem;
-  font-weight: 300; 
+  font-weight: 300;
   padding: 0.5rem 1rem;
   transition: background-color 0.3s ease;
 }
@@ -80,17 +84,16 @@
   padding: 0.9rem;
 }
 
-
 .nav-icon {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
-  width:12vw;
+  width: 12vw;
 }
 
 .icon-item {
   color: #000000;
-  padding: 0.3rem;
+  padding: 0rem;
   font-size: 24px;
   transition: color 0.3s ease;
 }
@@ -99,7 +102,6 @@
   color: #aeaeae;
 }
 
-
 .nav-toggle {
   display: flex;
   align-items: center;
@@ -107,10 +109,9 @@
   padding-right: 1rem;
 }
 
-
 @media (min-width: 768px) {
   .sidebar {
-    display: none; 
+    display: none;
   }
 
   .nav-list {
@@ -127,6 +128,6 @@
   }
 
   .nav-toggle {
-    display: none; 
+    display: none;
   }
 }

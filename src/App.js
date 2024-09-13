@@ -3,6 +3,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
 import Awards from './components/Awards';
+import Contact from './components/Contact';
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Loading from './components/loading';
@@ -29,6 +30,7 @@ const App = () => {
           <About /> 
           <Projects />
           <Awards />
+          <Contact />
         
         </>
       )}

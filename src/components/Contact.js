@@ -1,14 +1,13 @@
-// Contact.js
 import React from 'react';
-import './Contact.css'; // Import the corresponding CSS
+import './Contact.css'; 
 import { faLinkedin, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'; // Import faEnvelope from free-solid-svg-icons
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contact = () => {
   return (
     <section id="contact" className="contact">
-      <h2>CONTACT ME</h2>  {/* Added heading */}
+      <h2>CONTACT ME</h2>  {}
       <div className="nav-icon">
         <a className="icon-item" href="https://www.linkedin.com/in/jaymoyaaa" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '24px' }} />
