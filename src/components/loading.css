@@ -45,3 +45,13 @@ body {
     transform: rotate(360deg);
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212; 
+    color: white; 
+  }
+  .loading-container {
+    background-color: #121212;
+  }
+}
