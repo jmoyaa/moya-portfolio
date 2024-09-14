@@ -81,7 +81,7 @@ const Projects = () => {
         {projectData.map((project) => (
           <div key={project.id}>
             <img
-              className="project-item"
+              className="project-item1"
               src={project.thumbnail}
               alt={project.title}
               onClick={() => openPopup(project)}
@@ -93,7 +93,7 @@ const Projects = () => {
       {isPopupOpen && activeProject && (
         <div className="popup open" onClick={closePopup}>
           <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-            {/* Close button for the popup */}
+            {}
             <div className="close-popup-button" onClick={closePopup}>&#10005;</div>
             
             <h3>{activeProject.title}</h3>
